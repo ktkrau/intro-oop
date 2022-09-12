@@ -2,7 +2,7 @@ from Persona import Persona
 
 #Instancia de persona
 elena = Persona("Elena", "De Troya", "elena@codingdojo.com", 30)
-juana = Persona("Juana", "De Arco", "juana@codingdojo.com", 20)
+juana = Persona("Juana", "De Arco", "juana@codingdojo.com", 17)
 
 print(elena.nombre)
 print(juana.nombre)
@@ -24,3 +24,7 @@ print(elena.pais)
 Persona.imprime_lista()
 pablo = Persona("Pablo", "Picasso", "pablo@codingdojo.com", 50)
 Persona.imprime_lista()
+
+juana.cumpleaños()
+
+juana.tomar_cerveza()

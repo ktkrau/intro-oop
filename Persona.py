@@ -17,6 +17,8 @@ class Persona:
     def cumpleaños(self): #self proque siempre nos vamos a estar refiriendo a la instancia de persona
         self.edad += 1 #va a aumentar la edad en 1
         print("Muchas felicidades!")
+        if Persona.mayoria_edad(self.edad):
+            print("Eres mayor de edad!")
 
     
     def codificar(self, cantidad_lineas):
@@ -31,4 +33,18 @@ class Persona:
         for persona in cls.lista_personas: # cls = Persona
             print(persona.nombre) #VARIABLE persona NO LA CLASE
 
+
+
     
+    @staticmethod #quiero que si cumpleaños y tiene mayoria de edad imprima algo
+    def mayoria_edad(edad):
+        if edad >=18:
+            return True
+        else:
+            return False
+
+    def tomar_cerveza(self): #self = juana (linea38)
+        if Persona.mayoria_edad(self.edad): #le envío la edad de juana (18)
+            print("Aquí va tu cerveza", self.nombre)
+        else: 
+            print("Lo siento no puedes tomar", self.nombre )
