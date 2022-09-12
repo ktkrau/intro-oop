@@ -30,3 +30,8 @@ juana.cumpleaños()
 juana.tomar_cerveza()
 
 pablo.codificar(101)
+
+elena.curso.agrega_calificacion(9)
+elena.curso.agrega_calificacion(7)
+
+print(elena.curso.calificaciones)

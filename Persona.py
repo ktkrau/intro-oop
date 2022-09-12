@@ -1,3 +1,5 @@
+from Curso import Curso
+
 class Persona:
 
     pais = "Chile" #atributo de toda la clase
@@ -11,7 +13,7 @@ class Persona:
         self.edad = edad
         self.lineas_codigo = 0
         Persona.lista_personas.append(self)#estoy agregando la instancia (juana, elena, pablo)a la lista
-
+        self.curso = Curso("Bootcamp Python")#definiendo una nueva instancia de la clase curso
     
 
     def cumpleaños(self): #self proque siempre nos vamos a estar refiriendo a la instancia de persona
