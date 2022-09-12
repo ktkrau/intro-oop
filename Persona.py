@@ -24,6 +24,8 @@ class Persona:
     def codificar(self, cantidad_lineas):
         self.lineas_codigo += cantidad_lineas
         Persona.total_lineas_codigo += cantidad_lineas
+        if Persona.experto(self.lineas_codigo):
+            print("Eres un/a experto/a codificando,", self.nombre)
         
 #si quiero hacer una funcion que no es de una persona en especifico tengo que hacerlo con toda la clase
 
@@ -42,6 +44,14 @@ class Persona:
             return True
         else:
             return False
+
+    @staticmethod
+    def experto(lineas): # recibo un numero
+        if lineas > 100: #si el numero es mayor a 100 entonces es experto
+            return True
+        else:
+            return False # no es experto aun
+            # no se a quien corresponde las lines de codigo, solo recibo un numero, luego lo comparo con el metodo codificar()
 
     def tomar_cerveza(self): #self = juana (linea38)
         if Persona.mayoria_edad(self.edad): #le envío la edad de juana (18)

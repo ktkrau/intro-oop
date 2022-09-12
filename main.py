@@ -28,3 +28,5 @@ Persona.imprime_lista()
 juana.cumpleaños()
 
 juana.tomar_cerveza()
+
+pablo.codificar(101)
