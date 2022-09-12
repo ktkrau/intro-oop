@@ -19,3 +19,8 @@ elena.codificar(10)
 print(elena.lineas_codigo)
 print(juana.lineas_codigo)
 
+print(elena.pais)
+
+Persona.imprime_lista()
+pablo = Persona("Pablo", "Picasso", "pablo@codingdojo.com", 50)
+Persona.imprime_lista()
