@@ -60,3 +60,7 @@ class Persona:
             print("Aquí va tu cerveza", self.nombre)
         else: 
             print("Lo siento no puedes tomar", self.nombre )
+
+    def que_haces(self):
+        raise NotImplementedError #cuando a la persona le pregunten que_haces no va a decir nada
+#pero podriamos implementarla en estudiantes

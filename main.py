@@ -1,4 +1,6 @@
+from Estudiante import Estudiante
 from Persona import Persona
+from Estudiante import Estudiante
 
 #Instancia de persona
 elena = Persona("Elena", "De Troya", "elena@codingdojo.com", 30)
@@ -35,3 +37,20 @@ elena.curso.agrega_calificacion(9)
 elena.curso.agrega_calificacion(7)
 
 print(elena.curso.calificaciones)
+
+pedro = Estudiante("Pedro", "Páramo", "pedro@codingdojo.como",30, 1234)
+
+print(pedro.id)
+
+pedro.codificar(100)
+print(pedro.lineas_codigo)#estudiante tambien hereda los metodos de persona
+
+Persona.imprime_lista() #también imprime a pedro porque tambien es persona
+
+Estudiante.imprime_lista()
+
+pedro.cumpleaños()
+
+#elena.que_haces()
+pedro.que_haces()
+pedro.estudiar()
