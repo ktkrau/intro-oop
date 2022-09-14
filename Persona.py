@@ -64,3 +64,4 @@ class Persona:
     def que_haces(self):
         raise NotImplementedError #cuando a la persona le pregunten que_haces no va a decir nada
 #pero podriamos implementarla en estudiantes
+#NotImplementedError para hacer el metodo sin que funcione, para hacer la comparacion de polimorfismo
