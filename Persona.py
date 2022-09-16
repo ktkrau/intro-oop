@@ -4,7 +4,7 @@ class Persona:
 
     pais = "Chile" #atributo de toda la clase
     lista_personas = [] #Lista de todas las instancias de personas
-    total_lineas_codigo = 0 #Total de lineas de codigo de TODOS
+    total_lineas_codigo = 0 #Total de lineas de codigo de TODAS las personas
 
     def __init__(self,nombre, apellido, email, edad): #a traves de init inicializamos nuestra instancia.SELF incluye toda la informacion sobre el objeto individual
         self.nombre = nombre
