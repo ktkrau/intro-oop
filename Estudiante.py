@@ -1,6 +1,6 @@
 from Persona import Persona
 
-class Estudiante(Persona): #la clase a heredar es persona
+class Estudiante(Persona): #la clase que hereda es persona, la que recibe estudiante
 
     lista_estudiantes = []
 
